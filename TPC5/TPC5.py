@@ -30,7 +30,7 @@ def conceitos():
 @app.route("/conceitos/<designacao>")
 def descricoes(designacao):
         descricao = db.get(designacao)
-        return descricao
+        return f"<b>{designacao}</b> <p> {descricao} <p>"
 
 ##############TPC
 
