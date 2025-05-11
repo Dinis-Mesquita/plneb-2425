@@ -1,0 +1,1 @@
+#O objetivo deste exercício era explorar as várias funções e tentar obter resultados interessantes, sendo uma continuação do que foi feito durante a aula
