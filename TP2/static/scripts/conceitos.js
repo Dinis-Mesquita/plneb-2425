@@ -15,7 +15,7 @@ function delete_conceito(designation){
 }
 
 $(document).ready( function () {
-    $('#tabela_conceitos').DataTable({
+    $('#conceitos').DataTable({
         search: {
             regex: true
 

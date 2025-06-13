@@ -112,4 +112,4 @@ def conceitos_tabela():
 
 
 
-app.run(host="localhost", port=4002, debug=True)
+app.run(host="localhost", port=4001, debug=True)
