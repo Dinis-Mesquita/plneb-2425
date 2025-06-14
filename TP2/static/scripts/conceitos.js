@@ -23,3 +23,13 @@ $(document).ready( function () {
 
     });
 });
+
+$(document).ready( function () {
+    $('#area_conceitos').DataTable({
+        search: {
+            regex: true
+
+        },
+
+    });
+});

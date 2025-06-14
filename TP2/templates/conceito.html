@@ -40,6 +40,17 @@
       <h6 class="card-subtitle mb-4 text-body-secondary">
         {{ conceito["sinónimos pt"] | join(", ") }}
       </h6>
+      <div class="mb-4">
+      {% for key, value in conceito.items() %}
+        {% if key|length == 2 and key.isalpha() and value %}
+          {% if value is string %}
+            <span class="badge bg-secondary me-1">{{ key|upper }}: {{ value }}</span>
+          {% elif value is iterable %}
+            <span class="badge bg-secondary me-1">{{ key|upper }}: {{ value | join(", ") }}</span>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </div>
     </div>
 
 
