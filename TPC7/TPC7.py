@@ -94,13 +94,14 @@ def pesquisa():
 
 @app.delete("/conceitos/<designacao>")
 def delete_conceito(designacao):
+
     if designacao in db:
         f_out = open("conceitos_.json", "w")
         del db[designacao]
         json.dump(db,f_out, indent=4, ensure_ascii=False)
         f_out.close()
         return {"success": True,"message": "Conceito apagado com sucesso", "redirect_url":"/conceitos", "data":designacao}
-    
+
     return {"success": False,"message": "O conceito não existe", "data":designacao}
 
 
